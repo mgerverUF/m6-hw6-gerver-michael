@@ -19,6 +19,10 @@ header {
     font-size: 1em;
 }
 
+.box-list {
+    display: flex;
+}
+
 body h2 {
     color: #6203C3;
     margin: 5% 0;
@@ -29,11 +33,13 @@ body h2 {
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
     color: #6203C3;
+    font-weight: bold;
     border: 3px solid #6203C3;
+    box-shadow: 4px 4px 7px rgb(204, 204, 204);
     font-size: 3em;
     margin: 0 auto;
-    width: 30%;
-    padding: 7.5% 0;
+    width: 25%;
+    padding: 6.5% 0;
     margin-bottom: 10%;
 }
 
@@ -47,4 +53,26 @@ body h2 {
 
 .green {
     background-color: #A5FF01;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    body h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 770px) {
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 900px) {
+    body h2 {
+        font-size: 1.7em;
+    }
 }
