@@ -21,6 +21,30 @@ header {
 
 body h2 {
     color: #6203C3;
-    margin: 3% 0;
+    margin: 5% 0;
     font-size: 1em;
+}
+
+.box {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #6203C3;
+    border: 3px solid #6203C3;
+    font-size: 3em;
+    margin: 0 auto;
+    width: 30%;
+    padding: 7.5% 0;
+    margin-bottom: 10%;
+}
+
+.yellow {
+    background-color: #FCFF00;
+}
+
+.teal {
+    background-color: #55FFC9;
+}
+
+.green {
+    background-color: #A5FF01;
 }
