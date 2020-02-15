@@ -60,4 +60,9 @@ function messageThree() {
     document.querySelector('.results').appendChild(startOver);
 };
 
+// HIDE RESULTS CLASS ON STARTOVER CLICK
+/*startOver.addEventListener('click', clearPage)  
+function clearPage() {
+    document.querySelector('.results').classList.remove(startOver)
+};*/
 
