@@ -63,6 +63,14 @@ body h2 {
     font-size: 1em;
 }
 
+.results a {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(34, 30, 255);
+    margin: 5% 0;
+    font-size: 1em;
+}
+
 @media (min-width: 500px) {
     h1 {
         font-size: 2.5em;
