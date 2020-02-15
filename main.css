@@ -55,6 +55,13 @@ body h2 {
     background-color: #A5FF01;
 }
 
+.results {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(216, 14, 14);
+    margin: 5% 0;
+    font-size: 1em;
+}
 
 @media (min-width: 500px) {
     h1 {
