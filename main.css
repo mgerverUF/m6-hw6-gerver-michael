@@ -43,17 +43,18 @@ body h2 {
     margin-bottom: 10%;
 }
 
-.yellow {
+#yellow {
     background-color: #FCFF00;
 }
 
-.teal {
+#teal {
     background-color: #55FFC9;
 }
 
-.green {
+#green {
     background-color: #A5FF01;
 }
+
 
 @media (min-width: 500px) {
     h1 {
