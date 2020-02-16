@@ -1,16 +1,15 @@
-// BACKGROUND COLOR CHANGE ON HOVER 
+// VARIABLE FOR BACKGROUND COLOR CHANGE ON HOVER 
 var boxList = document.querySelector('.box-list');
 
-// DEFINE STARTOVER LINK FOR ALL FUNCTIONS TO USE
+// VARIABLES USED IN MULTIPLE FUNCTIONS
 var startOver = document.createElement('a');
-
 var clickThree = document.createElement('p');
 var clickOne = document.createElement('p');
 var clickTwo = document.createElement('p');
 
 
 
-
+// BACKGROUND COLOR CHANGE ON HOVER
 boxList.addEventListener('mouseenter', colorChange)  
 function colorChange() {
     document.getElementById('yellow').style.backgroundColor = '#FFA2F9';
@@ -25,7 +24,7 @@ function changeBack() {
     document.getElementById('green').style.backgroundColor = '#A5FF01';
 };
 
-// BOX 1 CLICK ACTION https://www.tutorialspoint.com/html-dom-appendchild-method https://www.peterbe.com/plog/createelement-a 
+// BOX 1 CLICK ACTION
 var boxOne = document.querySelector('#yellow');
 
 boxOne.addEventListener('click', messageOne)  
