@@ -40,7 +40,6 @@ body h2 {
     margin: 0 auto;
     width: 25%;
     padding: 6.5% 0;
-    margin-bottom: 10%;
 }
 
 #yellow {
@@ -90,5 +89,13 @@ body h2 {
 @media (min-width: 900px) {
     body h2 {
         font-size: 1.7em;
+    }
+
+    .results {
+        font-size: 1.3em;
+    }
+    
+    .results a {
+        font-size: 1.3em;
     }
 }
