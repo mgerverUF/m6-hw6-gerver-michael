@@ -1,6 +1,16 @@
 // BACKGROUND COLOR CHANGE ON HOVER 
 var boxList = document.querySelector('.box-list');
 
+// DEFINE STARTOVER LINK FOR ALL FUNCTIONS TO USE
+var startOver = document.createElement('a');
+
+var clickThree = document.createElement('p');
+var clickOne = document.createElement('p');
+var clickTwo = document.createElement('p');
+
+
+
+
 boxList.addEventListener('mouseenter', colorChange)  
 function colorChange() {
     document.getElementById('yellow').style.backgroundColor = '#FFA2F9';
@@ -20,10 +30,10 @@ var boxOne = document.querySelector('#yellow');
 
 boxOne.addEventListener('click', messageOne)  
 function messageOne() {
-    var clickOne = document.createElement('p');
-    var startOver = document.createElement('a');
     startOver.setAttribute('href', '#'); 
     startOver.setAttribute('alt', 'start the game again'); 
+    startOver.setAttribute('class','');
+    clickOne.setAttribute('class','');
     clickOne.innerHTML = 'Ohhh - so close, but no cigar';
     document.querySelector('.results').appendChild(clickOne);
     startOver.innerHTML = 'Start Over';
@@ -35,10 +45,10 @@ var boxTwo = document.querySelector('#teal');
 
 boxTwo.addEventListener('click', messageTwo)  
 function messageTwo() {
-    var clickTwo = document.createElement('p');
-    var startOver = document.createElement('a');
     startOver.setAttribute('href', '#'); 
     startOver.setAttribute('alt', 'start the game again');
+    startOver.setAttribute('class','');
+    clickTwo.setAttribute('class','');
     clickTwo.innerHTML = 'DING DING DING - We have a winner';
     document.querySelector('.results').appendChild(clickTwo);
     startOver.innerHTML = 'Start Over';
@@ -50,10 +60,10 @@ var boxThree = document.querySelector('#green');
 
 boxThree.addEventListener('click', messageThree)  
 function messageThree() {
-    var clickThree = document.createElement('p');
-    var startOver = document.createElement('a');
     startOver.setAttribute('href', '#'); 
     startOver.setAttribute('alt', 'start the game again');
+    startOver.setAttribute('class','');
+    clickThree.setAttribute('class','');
     clickThree.innerHTML = 'Oops, better luck next time';
     document.querySelector('.results').appendChild(clickThree);
     startOver.innerHTML = 'Start Over';
@@ -61,8 +71,12 @@ function messageThree() {
 };
 
 // HIDE RESULTS CLASS ON STARTOVER CLICK
-/*startOver.addEventListener('click', clearPage)  
-function clearPage() {
-    document.querySelector('.results').classList.remove(startOver)
-};*/
+startOver.addEventListener('click', clearPage)
+function clearPage() {       
+    startOver.setAttribute('class','message');
+    clickOne.setAttribute('class','message');
+    clickTwo.setAttribute('class','message');
+    clickThree.setAttribute('class','message');
+    document.querySelector('.message').classList.toggle(startOver);
+};
 
